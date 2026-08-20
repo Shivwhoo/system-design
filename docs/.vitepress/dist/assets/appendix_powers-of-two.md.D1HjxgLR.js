@@ -1,0 +1,10 @@
+import{_ as s,o as n,c as e,a3 as p}from"./chunks/framework.B5WAEDB7.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"appendix/powers-of-two.md","filePath":"appendix/powers-of-two.md"}'),o={name:"appendix/powers-of-two.md"};function t(r,a,l,i,c,d){return n(),e("div",null,[...a[0]||(a[0]=[p(`<h3 id="powers-of-two-table" tabindex="-1">Powers of two table <a class="header-anchor" href="#powers-of-two-table" aria-label="Permalink to &quot;Powers of two table&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Power           Exact Value         Approx Value        Bytes</span></span>
+<span class="line"><span>---------------------------------------------------------------</span></span>
+<span class="line"><span>7                             128</span></span>
+<span class="line"><span>8                             256</span></span>
+<span class="line"><span>10                           1024   1 thousand           1 KB</span></span>
+<span class="line"><span>16                         65,536                       64 KB</span></span>
+<span class="line"><span>20                      1,048,576   1 million            1 MB</span></span>
+<span class="line"><span>30                  1,073,741,824   1 billion            1 GB</span></span>
+<span class="line"><span>32                  4,294,967,296                        4 GB</span></span>
+<span class="line"><span>40              1,099,511,627,776   1 trillion           1 TB</span></span></code></pre></div><h4 id="source-s-and-further-reading" tabindex="-1">Source(s) and further reading <a class="header-anchor" href="#source-s-and-further-reading" aria-label="Permalink to &quot;Source(s) and further reading&quot;">​</a></h4><ul><li><a href="https://en.wikipedia.org/wiki/Power_of_two" target="_blank" rel="noreferrer">Powers of two</a></li></ul>`,4)])])}const h=s(o,[["render",t]]);export{f as __pageData,h as default};

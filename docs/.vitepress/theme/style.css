@@ -1,0 +1,129 @@
+/* Custom CSS for beautiful, premium VitePress theme */
+:root {
+  --vp-c-brand: #3b82f6;
+  --vp-c-brand-light: #60a5fa;
+  --vp-c-brand-lighter: #93c5fd;
+  --vp-c-brand-dark: #2563eb;
+  --vp-c-brand-darker: #1d4ed8;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+  
+  --font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: -0.01em;
+}
+
+/* Progress Tracker Styles */
+.progress-tracker-wrapper {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.progress-tracker-wrapper:hover {
+  background-color: var(--vp-c-bg-mute);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.progress-tracker-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.progress-tracker-checkbox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--vp-c-brand);
+  border-radius: 6px;
+  margin-right: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--vp-c-bg);
+}
+
+.progress-tracker-checkbox:checked {
+  background-color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+}
+
+.progress-tracker-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.progress-tracker-text {
+  font-size: 1.1em;
+}
+
+/* Enhancing Tables */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2em;
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+  text-align: left;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: var(--vp-c-bg-mute);
+}
+
+/* Image Enhancements */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Key Takeaways block customization */
+.custom-block.tip {
+  border-color: var(--vp-c-brand);
+  background-color: rgba(59, 130, 246, 0.05);
+}
